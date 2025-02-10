@@ -1,0 +1,68 @@
+{
+  "webapps": [
+    {
+      "name": "Amazon Prime Video",
+      "url": "https://www.amazon.de/gp/video/storefront/?pvp=/ref%3Ddvm_crs_nav_de_xs_s_d_disc_eg_al?ref_=nav_cs_prime_video"
+    },
+    {
+      "name": "Codecademy",
+      "url": "https://www.codecademy.com/learn?page=home"
+    },
+    {
+      "name": "Disney+",
+      "url": "https://www.disneyplus.com/de-at"
+    },
+    {
+      "name": "George Marakanda",
+      "url": "https://login.sparkasse.at/sts/oauth/authorize?client_id=georgeclient&response_type=token&state=%2Foverview"
+    },
+    {
+      "name": "Google Sheets Marakanda",
+      "url": "https://docs.google.com/spreadsheets/u/0/?pli=1&tgif=d"
+    },
+    {
+      "name": "Google Sheets Murakamy",
+      "url": "https://docs.google.com/spreadsheets/u/0/?pli=1&tgif=d"
+    },
+    {
+      "name": "Google Sheets Privat",
+      "url": "https://docs.google.com/spreadsheets/u/0/?pli=1&tgif=d"
+    },
+    {
+      "name": "MacSparky Field Guides",
+      "url": "https://learn.macsparky.com/"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://www.netflix.com/browse"
+    },
+    {
+      "name": "ORF ON",
+      "url": "https://on.orf.at/live?channel=orf1"
+    },
+    {
+      "name": "Perplexity Pro",
+      "url": "https://www.perplexity.ai/"
+    },
+    {
+      "name": "Scott's Bass Lessons",
+      "url": "https://scotts-bass-lessons.teachable.com/"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://www.twitch.tv/piratesoftware"
+    },
+    {
+      "name": "UniFi Site Manager",
+      "url": "https://unifi.ui.com/"
+    },
+    {
+      "name": "Xert Fitness",
+      "url": "https://www.xertonline.com/my-fitness"
+    },
+    {
+      "name": "YNAB Marakanda",
+      "url": "https://app.ynab.com/bb7b89a0-9ba6-4168-87d5-6c086eb49b22/accounts/f29c004d-a564-45a1-ad6c-2888f7646bec"
+    }
+  ]
+}
