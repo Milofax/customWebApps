@@ -1,14 +1,18 @@
 # WebApp Auto Creator
 
-WebApp Auto Creator is a macOS automation project that creates web application shortcuts (i.e., “Apps”) by reading entries from a JSON file and using AppleScript to control Safari. This allows you to quickly add your favorite web apps to the Dock.
+WebApp Auto Creator is a macOS automation project that creates web application shortcuts (i.e. “Apps”) in the Dock by reading entries from a JSON file and using AppleScript to control Safari. Optionally, the script can also remove the created webapp items from the Dock.
 
 ## How It Works
 
--  The script (`setup.sh`) parses a JSON file named `webApps.json` containing an array of web apps.
--  Each entry is expected to have two keys: `name` and `url`.
--  The script uses `jq` for JSON parsing and ensures that any special characters in URLs or names are properly escaped for AppleScript.
--  Safari is launched, navigated to the URL, and then controlled via simulated keyboard input and menu clicks to add the web app shortcut.
--  Finally, Safari’s windows are closed and Safari is quit completely.
+-  The script (`setup.sh`) reads webapp data from a JSON file named `webApps.json`. Each entry must include two keys: `name` and `url`.
+-  For each entry, the script uses `jq` to parse the JSON and escapes special characters in the `name` and `url` for safe insertion into an AppleScript block.
+-  The AppleScript in the script automates Safari—it opens the given URL, interacts with the menu (in German, the script uses “Ablage” and “Zum Dock hinzufügen …”) and simulates keystrokes to add the webapp shortcut to the Dock.
+-  After all webapps are processed, Safari is closed (all windows are closed and Safari quits).
+-  Optionally, if you run the script with the argument `remove`, it will read the webapp names from the JSON file and, using PlistBuddy, remove from the Dock any persistent app item whose file label matches one of the webapp names. The Dock is then restarted to apply these changes.
 
 ## Prerequisites
-jq has to be installed. On the mac, use `brew install jq`.
+
+-  **macOS with Safari:** The script automates Safari to create the webapp shortcuts.
+-  **jq:** A lightweight and flexible command-line JSON processor. Install via Homebrew:
+  ```bash
+  brew install jq
