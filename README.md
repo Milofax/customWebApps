@@ -1,5 +1,7 @@
 # WebApp Auto Creator
 
+Using modern window managers in Mac OS like [aerospace](https://nikitabobko.github.io/AeroSpace) restrict an opening browser window to one workspace, if you defined it. I wanted to be more flexible with my different Websites and contained Services and Apps.
+
 WebApp Auto Creator is a macOS automation project that creates web application shortcuts (i.e. “Apps”) in the Dock by reading entries from a JSON file and using AppleScript to control Safari. Optionally, the script can also remove the created webapp items from the Dock.
 
 ## How It Works
